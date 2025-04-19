@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeevan NM - Embedded Systems Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f9f9f9;
+      --text-color: #111;
+      --primary-color: #007acc;
+      --card-bg: #fff;
+    }
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #f9f9f9;
+      --primary-color: #00aaff;
+      --card-bg: #1f1f1f;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+      transition: 0.3s ease;
+    }
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 4px solid white;
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 960px;
+      margin: auto;
+      animation: fadeIn 1s ease;
+    }
+    h2 {
+      color: var(--primary-color);
+      font-size: 1.8rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .project, .certification {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--primary-color);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    img.profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 20px auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  
+.skill-bar {
+  background: #ddd;
+  border-radius: 20px;
+  margin: 10px 0;
+  height: 20px;
+  overflow: hidden;
+}
+.skill-bar-fill {
+  height: 100%;
+  width: 0;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  animation: fillBar 2s ease forwards;
+}
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: var(--fill-width); }
+}
+
+</style>
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="theme-toggle" onclick="toggleTheme()">Toggle Theme</div>
+
+<header>
+  <h1>Jeevan NM</h1>
+  <p>Embedded Systems Engineer</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <img src="my_photo.png" alt="Jeevan NM Photo" class="profile-pic">
+  <p>I am an enthusiastic Embedded Systems Engineer with a BE in Electronics and Communication and a specialized course in embedded systems. I’m passionate about designing efficient, real-time embedded solutions and always eager to learn and grow in this field.</p>
+</section>
+
+<section id="skills" data-aos="fade-up">
+<h2>Skills</h2>
+<div class="skill">
+  <p>C, Embedded C, Shell Scripting</p>
+  <div class="skill-bar"><div class="skill-bar-fill" style="--fill-width: 90%;"></div></div>
+</div>
+<div class="skill">
+  <p>PIC18F4580, Arduino, ESP8266, ARM Cortex-M</p>
+  <div class="skill-bar"><div class="skill-bar-fill" style="--fill-width: 85%;"></div></div>
+</div>
+<div class="skill">
+  <p>Protocols: I2C, SPI, UART, CAN</p>
+  <div class="skill-bar"><div class="skill-bar-fill" style="--fill-width: 80%;"></div></div>
+</div>
+<div class="skill">
+  <p>Tools: Keil, STM32CubeIDE, MPLAB X, GDB, GCC, Makefiles</p>
+  <div class="skill-bar"><div class="skill-bar-fill" style="--fill-width: 75%;"></div></div>
+</div>
+<div class="skill">
+  <p>RTOS: FreeRTOS</p>
+  <div class="skill-bar"><div class="skill-bar-fill" style="--fill-width: 70%;"></div></div>
+</div>
+</section>
+
+<section id="projects" data-aos="fade-up">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>LSB Image Steganography</h3>
+    <p>Securely hides and transmits data within digital images by modifying the least significant bits without degrading image quality.</p>
+    <a href="https://github.com/jeevan8133/LSB-Image-Steganography" target="_blank">GitHub Repository</a>
+  </div>
+  <div class="project">
+    <h3>Illegal Tree Cutting Prevention System</h3>
+    <p>Detects unauthorized tree cutting using sensors and GPS; sends alerts to authorities and displays real-time data on a dashboard.</p>
+    <p><em>Technologies:</em> Arduino Uno, ESP8266 NodeMCU</p>
+  </div>
+  <div class="project">
+    <h3>Car Black Box</h3>
+    <p>Captures speed, GPS data, and event triggers for accident analysis using PIC microcontroller and Embedded C.</p>
+    <a href="https://github.com/jeevan8133/Car-black-box" target="_blank">GitHub Repository</a>
+  </div>
+</section>
+
+<section id="certifications" data-aos="fade-up">
+  <h2>Certifications</h2>
+  <ul>
+    <li><strong>Advanced Embedded System Course</strong> – Emertxe Information Technologies<br><a href="https://certificate.emertxe.com/?id=23020_180" target="_blank">View Certificate</a></li>
+    <li><strong>5-Star C Programming</strong> – HackerRank<br><a href="https://www.hackerrank.com/profile/jeevanjeevu85501" target="_blank">View Credentials</a></li>
+  </ul>
+</section>
+
+<section id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:jeevanjeevu855011@gmail.com">jeevanjeevu855011@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/jeevan-nm" target="_blank">linkedin.com/in/jeevan-nm</a></p>
+  <p>GitHub: <a href="https://github.com/jeevan8133" target="_blank">github.com/jeevan8133</a></p>
+  <a href="resume.pdf" download class="btn">Download Resume</a>
+</section>
+
+<script>
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+}
+(function() {
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+})();
+
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</body>
+</html>
