@@ -1,184 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jeevan NM - Embedded Systems Engineer</title>
-  <style>
-    :root {
-      --bg-color: #f2f2f2;
-      --text-color: #000;
-      --primary-color: #003366;
-      --card-bg: #ffffff;
-    }
-    [data-theme="dark"] {
-      --bg-color: #121212;
-      --text-color: #f2f2f2;
-      --primary-color: #00aaff;
-      --card-bg: #1e1e1e;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      transition: 0.3s ease;
-    }
-    header {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 960px;
-      margin: auto;
-    }
-    h2 {
-      color: var(--primary-color);
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 10px;
-      background-color: var(--primary-color);
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .project, .certification {
-      background-color: var(--card-bg);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 15px 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .theme-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: white;
-      padding: 5px 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevan NM - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="theme-toggle" onclick="toggleTheme()">Toggle Theme</div>
-
-  <header>
+<header>
     <h1>Jeevan NM</h1>
-    <p>Embedded Systems Engineer</p>
     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </header>
+</header>
 
-  <section id="about">
+<section id="about">
     <h2>About Me</h2>
-    <p>I am an enthusiastic Embedded Systems Engineer with a BE in Electronics and Communication and a specialized course in embedded systems. I’m passionate about designing efficient, real-time embedded solutions and always eager to learn and grow in this field.</p>
-  </section>
+    <p>Welcome to my portfolio! I am a [Your Profession/Title] with a passion for [Your Interests/Field]. I have experience in [Briefly describe your experience or what you specialize in].</p>
+</section>
 
-  <section id="skills">
+<section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>C, Embedded C</li>
-      <li>ARM Cortex-M, AVR, PIC Microcontrollers</li>
-      <li>Protocols: I2C, SPI, UART, CAN</li>
-      <li>Tools: Keil, STM32CubeIDE, MPLAB X</li>
-      <li>RTOS: FreeRTOS</li>
+        <li>Skill 1</li>
+        <li>Skill 2</li>
+        <li>Skill 3</li>
+        <li>Skill 4</li>
+        <li>Skill 5</li>
     </ul>
-  </section>
+</section>
 
-  <section id="projects">
-    <h2>Projects & Works</h2>
+<section id="experience">
+    <h2>Experience</h2>
+    <h3>Job Title - Company Name</h3>
+    <p>[Brief description of your role and achievements]</p>
+    <h3>Job Title - Company Name</h3>
+    <p>[Brief description of your role and achievements]</p>
+</section>
 
-    <div class="project">
-      <h3>Smart Home Automation System</h3>
-      <p>Controlled appliances via ESP32 using MQTT and FreeRTOS. Integrated with Google Assistant for voice commands.</p>
-    </div>
+<section id="education">
+    <h2>Education</h2>
+    <h3>Degree - Institution Name</h3>
+    <p>[Year of graduation or duration]</p>
+    <h3>Degree - Institution Name</h3>
+    <p>[Year of graduation or duration]</p>
+</section>
 
-    <div class="project">
-      <h3>Temperature & Humidity Logger</h3>
-      <p>Built using STM32 and DHT11 sensor. Logged data to SD card and displayed real-time values on LCD.</p>
-      <a href="https://github.com/jeevan8133/temp-logger" target="_blank">View on GitHub</a>
-    </div>
+<section id="projects">
+    <h2>Projects</h2>
+    <h3>Project Title</h3>
+    <p>[Brief description of the project and your role]</p>
+    <h3>Project Title</h3>
+    <p>[Brief description of the project and your role]</p>
+</section>
 
-    <div class="project">
-      <h3>Vehicle Tracking System</h3>
-      <p>Designed using GPS module and GSM module on AVR, sends live location to user’s phone via SMS.</p>
-      <a href="https://github.com/jeevan8133/vehicle-tracker" target="_blank">View on GitHub</a>
-    </div>
-  </section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+</section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-
-    <div class="certification">
-      <h3>Embedded Systems Certification - [Institute Name]</h3>
-      <p>Covered microcontroller programming, RTOS concepts, interfacing, and communication protocols.</p>
-    </div>
-
-    <div class="certification">
-      <h3>Online Course: Embedded C - Udemy</h3>
-      <p>Focused on hands-on programming with examples on ARM Cortex-M.</p>
-    </div>
-
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:jeevan.yourmail@example.com">jeevan.yourmail@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/jeevan-nm" target="_blank">linkedin.com/in/jeevan-nm</a></p>
-    <p>GitHub: <a href="https://github.com/jeevan8133" target="_blank">github.com/jeevan8133</a></p>
-
-    <a href="resume.pdf" download class="btn">Download Resume</a>
-
-    <form action="https://formspree.io/f/your-form-id" method="POST" style="margin-top:20px;">
-      <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:10px;margin:5px 0;">
-      <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:10px;margin:5px 0;">
-      <textarea name="message" placeholder="Your Message" required style="width:100%;padding:10px;margin:5px 0;"></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
-
-  <script>
-    function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    }
-
-    // Load saved theme
-    (function() {
-      const savedTheme = localStorage.getItem('theme') || 'light';
-      document.documentElement.setAttribute('data-theme', savedTheme);
-    })();
-  </script>
+<footer>
+    <p>&copy; 2023 Jeevan NM. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
