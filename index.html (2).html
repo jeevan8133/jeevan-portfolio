@@ -1,184 +1,100 @@
+Thank you for providing the details! Based on the information you've shared, I'll create a simple and elegant HTML template for your portfolio. You can customize the styles further if you wish. Here's a basic `index.html` code for your portfolio:
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jeevan NM - Embedded Systems Engineer</title>
-  <style>
-    :root {
-      --bg-color: #f2f2f2;
-      --text-color: #000;
-      --primary-color: #003366;
-      --card-bg: #ffffff;
-    }
-    [data-theme="dark"] {
-      --bg-color: #121212;
-      --text-color: #f2f2f2;
-      --primary-color: #00aaff;
-      --card-bg: #1e1e1e;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      transition: 0.3s ease;
-    }
-    header {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 960px;
-      margin: auto;
-    }
-    h2 {
-      color: var(--primary-color);
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 10px;
-      background-color: var(--primary-color);
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .project, .certification {
-      background-color: var(--card-bg);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 15px 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .theme-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: white;
-      padding: 5px 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevan N M - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .contact-info {
+            margin: 10px 0;
+        }
+        .project {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="theme-toggle" onclick="toggleTheme()">Toggle Theme</div>
+<header>
+    <h1>Jeevan N M</h1>
+    <p>Chitradurga, Karnataka | +91-9740580538 | jeevanjeevu855011@gmail.com</p>
+</header>
 
-  <header>
-    <h1>Jeevan NM</h1>
-    <p>Embedded Systems Engineer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<div class="container">
+    <section>
+        <h2>Profile Summary</h2>
+        <p>Proficient in programming microcontrollers, particularly the PIC18F4580, with hands-on experience in embedded programming and IoT development. Completed various projects utilizing Arduino and PIC microcontroller systems focused on real-time systems, sensor interfacing, and secure data communication. Demonstrates problem-solving abilities and technical expertise in embedded systems design, firmware development, and data transmission protocols. Eager to leverage skills and knowledge to contribute to the development of innovative embedded solutions and enhance firmware functionality in a dynamic engineering environment.</p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am an enthusiastic Embedded Systems Engineer with a BE in Electronics and Communication and a specialized course in embedded systems. I’m passionate about designing efficient, real-time embedded solutions and always eager to learn and grow in this field.</p>
-  </section>
+    <section>
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Languages: C Programming, Shell Scripting, Embedded C</li>
+            <li>Embedded Controllers: Timers, Counters, Interrupts</li>
+            <li>Communication Protocols: UART, SPI, I2C</li>
+            <li>Development Environment & Tools: GCC, GDB, XC8, Makefiles, MPLab</li>
+        </ul>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>C, Embedded C</li>
-      <li>ARM Cortex-M, AVR, PIC Microcontrollers</li>
-      <li>Protocols: I2C, SPI, UART, CAN</li>
-      <li>Tools: Keil, STM32CubeIDE, MPLAB X</li>
-      <li>RTOS: FreeRTOS</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects & Works</h2>
-
-    <div class="project">
-      <h3>Smart Home Automation System</h3>
-      <p>Controlled appliances via ESP32 using MQTT and FreeRTOS. Integrated with Google Assistant for voice commands.</p>
-    </div>
-
-    <div class="project">
-      <h3>Temperature & Humidity Logger</h3>
-      <p>Built using STM32 and DHT11 sensor. Logged data to SD card and displayed real-time values on LCD.</p>
-      <a href="https://github.com/jeevan8133/temp-logger" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Vehicle Tracking System</h3>
-      <p>Designed using GPS module and GSM module on AVR, sends live location to user’s phone via SMS.</p>
-      <a href="https://github.com/jeevan8133/vehicle-tracker" target="_blank">View on GitHub</a>
-    </div>
-  </section>
-
-  <section id="certifications">
-    <h2>Certifications</h2>
-
-    <div class="certification">
-      <h3>Embedded Systems Certification - [Institute Name]</h3>
-      <p>Covered microcontroller programming, RTOS concepts, interfacing, and communication protocols.</p>
-    </div>
-
-    <div class="certification">
-      <h3>Online Course: Embedded C - Udemy</h3>
-      <p>Focused on hands-on programming with examples on ARM Cortex-M.</p>
-    </div>
-
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:jeevan.yourmail@example.com">jeevan.yourmail@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/jeevan-nm" target="_blank">linkedin.com/in/jeevan-nm</a></p>
-    <p>GitHub: <a href="https://github.com/jeevan8133" target="_blank">github.com/jeevan8133</a></p>
-
-    <a href="resume.pdf" download class="btn">Download Resume</a>
-
-    <form action="https://formspree.io/f/your-form-id" method="POST" style="margin-top:20px;">
-      <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:10px;margin:5px 0;">
-      <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:10px;margin:5px 0;">
-      <textarea name="message" placeholder="Your Message" required style="width:100%;padding:10px;margin:5px 0;"></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
-
-  <script>
-    function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    }
-
-    // Load saved theme
-    (function() {
-      const savedTheme = localStorage.getItem('theme') || 'light';
-      document.documentElement.setAttribute('data-theme', savedTheme);
-    })();
-  </script>
-
-</body>
-</html>
+    <section>
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>LSB Image Steganography</h3>
+            <p><strong>Technologies:</strong> C Programming, GDB Compiler | <a href="https://github.com/your-repo-link" target="_blank">GitHub Repository</a></p>
+            <p>This project helps us to securely hide and transmit data within digital images by modifying the least significant bits. The project ensures confidentiality by embedding messages without significantly altering the image quality.</p>
+        </div>
+        <div class="project">
+            <h3>Illegal Tree Cutting Prevention System</h3>
+            <p><strong>Technologies:</strong> Arduino uno, ESP8266 NodeMCU</p>
+            <p>This project detects unauthorized tree cutting using sensors and GPS tracking, sending instant alerts to authorities. It provides a real-time dashboard to monitor forest areas and track deforestation activities.</p>
+        </div>
+        <div class="project">
+            <h3>Car Black Box</h3>
+            <p><strong>Technologies:</strong> PIC18F2580, MPLAB | <a href="https://github.com/your-repo-link" target="_blank">GitHub Repository</a></p>
+            <p>The Car Black Box project enhances vehicle safety by recording critical data helping in accident analysis and fault detection. Developed a car black box using Embedded C, PIC18F4580, and necessary peripherals to record critical events like speed, GPS data, and sensor readings.</p>
+        </div
